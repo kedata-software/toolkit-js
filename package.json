@@ -20,6 +20,76 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.esm.js",
       "require": "./dist/index.cjs.js"
+    },
+    "./convert-bytes": {
+      "types": "./dist/convert-bytes.d.ts",
+      "import": "./dist/convert-bytes.esm.js",
+      "require": "./dist/convert-bytes.cjs.js"
+    },
+    "./create-basic-token": {
+      "types": "./dist/create-basic-token.d.ts",
+      "import": "./dist/create-basic-token.esm.js",
+      "require": "./dist/create-basic-token.cjs.js"
+    },
+    "./data-attr-boolean": {
+      "types": "./dist/data-attr-boolean.d.ts",
+      "import": "./dist/data-attr-boolean.esm.js",
+      "require": "./dist/data-attr-boolean.cjs.js"
+    },
+    "./decode-basic-token": {
+      "types": "./dist/decode-basic-token.d.ts",
+      "import": "./dist/decode-basic-token.esm.js",
+      "require": "./dist/decode-basic-token.cjs.js"
+    },
+    "./default-array": {
+      "types": "./dist/default-array.d.ts",
+      "import": "./dist/default-array.esm.js",
+      "require": "./dist/default-array.cjs.js"
+    },
+    "./default-object": {
+      "types": "./dist/default-object.d.ts",
+      "import": "./dist/default-object.esm.js",
+      "require": "./dist/default-object.cjs.js"
+    },
+    "./delay-async": {
+      "types": "./dist/delay-async.d.ts",
+      "import": "./dist/delay-async.esm.js",
+      "require": "./dist/delay-async.cjs.js"
+    },
+    "./get-bytes": {
+      "types": "./dist/get-bytes.d.ts",
+      "import": "./dist/get-bytes.esm.js",
+      "require": "./dist/get-bytes.cjs.js"
+    },
+    "./is-object-empty": {
+      "types": "./dist/is-object-empty.d.ts",
+      "import": "./dist/is-object-empty.esm.js",
+      "require": "./dist/is-object-empty.cjs.js"
+    },
+    "./name-initials": {
+      "types": "./dist/name-initials.d.ts",
+      "import": "./dist/name-initials.esm.js",
+      "require": "./dist/name-initials.cjs.js"
+    },
+    "./omit-props": {
+      "types": "./dist/omit-props.d.ts",
+      "import": "./dist/omit-props.esm.js",
+      "require": "./dist/omit-props.cjs.js"
+    },
+    "./parse-email": {
+      "types": "./dist/parse-email.d.ts",
+      "import": "./dist/parse-email.esm.js",
+      "require": "./dist/parse-email.cjs.js"
+    },
+    "./to-safe-number": {
+      "types": "./dist/to-safe-number.d.ts",
+      "import": "./dist/to-safe-number.esm.js",
+      "require": "./dist/to-safe-number.cjs.js"
+    },
+    "./try-async": {
+      "types": "./dist/try-async.d.ts",
+      "import": "./dist/try-async.esm.js",
+      "require": "./dist/try-async.cjs.js"
     }
   },
   "files": [
