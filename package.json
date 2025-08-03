@@ -10,85 +10,85 @@
     "url": "https://github.com/kedata-software/toolkit-js"
   },
   "scripts": {
-    "test": "vitest",
+    "test": "vitest -w false",
     "build:pre": "rm -rf dist",
-    "build:tsup": "tsup",
-    "build": "yarn build:pre && yarn build:tsup"
+    "build:tsdown": "tsdown",
+    "build": "yarn build:pre && yarn build:tsdown"
   },
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/index.esm.js",
+      "import": "./dist/index.es.js",
       "require": "./dist/index.cjs.js"
     },
     "./convert-bytes": {
       "types": "./dist/convert-bytes.d.ts",
-      "import": "./dist/convert-bytes.esm.js",
+      "import": "./dist/convert-bytes.es.js",
       "require": "./dist/convert-bytes.cjs.js"
     },
     "./create-basic-token": {
       "types": "./dist/create-basic-token.d.ts",
-      "import": "./dist/create-basic-token.esm.js",
+      "import": "./dist/create-basic-token.es.js",
       "require": "./dist/create-basic-token.cjs.js"
     },
     "./data-attr-boolean": {
       "types": "./dist/data-attr-boolean.d.ts",
-      "import": "./dist/data-attr-boolean.esm.js",
+      "import": "./dist/data-attr-boolean.es.js",
       "require": "./dist/data-attr-boolean.cjs.js"
     },
     "./decode-basic-token": {
       "types": "./dist/decode-basic-token.d.ts",
-      "import": "./dist/decode-basic-token.esm.js",
+      "import": "./dist/decode-basic-token.es.js",
       "require": "./dist/decode-basic-token.cjs.js"
     },
     "./default-array": {
       "types": "./dist/default-array.d.ts",
-      "import": "./dist/default-array.esm.js",
+      "import": "./dist/default-array.es.js",
       "require": "./dist/default-array.cjs.js"
     },
     "./default-object": {
       "types": "./dist/default-object.d.ts",
-      "import": "./dist/default-object.esm.js",
+      "import": "./dist/default-object.es.js",
       "require": "./dist/default-object.cjs.js"
     },
     "./delay-async": {
       "types": "./dist/delay-async.d.ts",
-      "import": "./dist/delay-async.esm.js",
+      "import": "./dist/delay-async.es.js",
       "require": "./dist/delay-async.cjs.js"
     },
     "./get-bytes": {
       "types": "./dist/get-bytes.d.ts",
-      "import": "./dist/get-bytes.esm.js",
+      "import": "./dist/get-bytes.es.js",
       "require": "./dist/get-bytes.cjs.js"
     },
     "./is-object-empty": {
       "types": "./dist/is-object-empty.d.ts",
-      "import": "./dist/is-object-empty.esm.js",
+      "import": "./dist/is-object-empty.es.js",
       "require": "./dist/is-object-empty.cjs.js"
     },
     "./name-initials": {
       "types": "./dist/name-initials.d.ts",
-      "import": "./dist/name-initials.esm.js",
+      "import": "./dist/name-initials.es.js",
       "require": "./dist/name-initials.cjs.js"
     },
     "./omit-props": {
       "types": "./dist/omit-props.d.ts",
-      "import": "./dist/omit-props.esm.js",
+      "import": "./dist/omit-props.es.js",
       "require": "./dist/omit-props.cjs.js"
     },
     "./parse-email": {
       "types": "./dist/parse-email.d.ts",
-      "import": "./dist/parse-email.esm.js",
+      "import": "./dist/parse-email.es.js",
       "require": "./dist/parse-email.cjs.js"
     },
     "./to-safe-number": {
       "types": "./dist/to-safe-number.d.ts",
-      "import": "./dist/to-safe-number.esm.js",
+      "import": "./dist/to-safe-number.es.js",
       "require": "./dist/to-safe-number.cjs.js"
     },
     "./try-async": {
       "types": "./dist/try-async.d.ts",
-      "import": "./dist/try-async.esm.js",
+      "import": "./dist/try-async.es.js",
       "require": "./dist/try-async.cjs.js"
     }
   },
@@ -99,12 +99,14 @@
     "@changesets/cli": "^2.28.1",
     "@types/node": "^24.1.0",
     "jsdom": "^26.0.0",
-    "tsup": "^8.4.0",
     "typescript": "^5.7.0",
     "vite": "^5.3.3",
     "vitest": "^1.6.0"
   },
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "tsdown": "^0.13.2"
   }
 }
