@@ -1,4 +1,4 @@
-import { describe, it } from 'vitest';
+import { describe, it, expect } from 'vitest';
 import getBytes from './getBytes';
 
 describe('getBytes', () => {
