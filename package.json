@@ -10,7 +10,7 @@
     "url": "https://github.com/kedata-software/toolkit-js"
   },
   "scripts": {
-    "test": "vitest",
+    "test": "vitest -w false",
     "build:pre": "rm -rf dist",
     "build:tsdown": "tsdown",
     "build": "yarn build:pre && yarn build:tsdown"
