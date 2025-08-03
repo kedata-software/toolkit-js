@@ -2,7 +2,7 @@
   "name": "@kedata-software/toolkit-js",
   "author": "PT Kedata Indonesia Digital",
   "description": "A collection of JavaScript utility functions. Safe to use in both Node.js and the browser.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "license": "MIT",
   "private": false,
   "repository": {
