@@ -97,6 +97,7 @@
   ],
   "devDependencies": {
     "@changesets/cli": "^2.28.1",
+    "@types/node": "^24.1.0",
     "jsdom": "^26.0.0",
     "tsup": "^8.4.0",
     "typescript": "^5.7.0",

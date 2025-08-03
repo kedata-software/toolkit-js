@@ -11,6 +11,9 @@ importers:
       '@changesets/cli':
         specifier: ^2.28.1
         version: 2.29.5
+      '@types/node':
+        specifier: ^24.1.0
+        version: 24.1.0
       jsdom:
         specifier: ^26.0.0
         version: 26.1.0
@@ -22,10 +25,10 @@ importers:
         version: 5.9.2
       vite:
         specifier: ^5.3.3
-        version: 5.4.19
+        version: 5.4.19(@types/node@24.1.0)
       vitest:
         specifier: ^1.6.0
-        version: 1.6.1(jsdom@26.1.0)
+        version: 1.6.1(@types/node@24.1.0)(jsdom@26.1.0)
 
 packages:
 
@@ -564,6 +567,9 @@ packages:
 
   '@types/node@12.20.55':
     resolution: {integrity: sha512-J8xLz7q2OFulZ2cyGTLE1TbbZcjpno7FaN6zdJNrgAdrJ+DZzh/uFR6YrTb4C+nXakvud8Q4+rbhoIWlYQbUFQ==}
+
+  '@types/node@24.1.0':
+    resolution: {integrity: sha512-ut5FthK5moxFKH2T1CUOC6ctR67rQRvvHdFLCD2Ql6KXmMuCrjsSsRI9UsLCm9M18BMwClv4pn327UvB7eeO1w==}
 
   '@vitest/expect@1.6.1':
     resolution: {integrity: sha512-jXL+9+ZNIJKruofqXuuTClf44eSpcHlgj3CiuNihUF3Ioujtmc0zIa3UJOW5RjDK1YLBJZnWBlPuqhYycLioog==}
@@ -1365,6 +1371,9 @@ packages:
   ufo@1.6.1:
     resolution: {integrity: sha512-9a4/uxlTWJ4+a5i0ooc1rU7C7YOw3wT+UGqdeNNHWnOF9qcMBgLRS+4IYUqbczewFx4mLEig6gawh7X6mFlEkA==}
 
+  undici-types@7.8.0:
+    resolution: {integrity: sha512-9UJ2xGDvQ43tYyVMpuHlsgApydB8ZKfVYTsLDhXkFL/6gfkp+U8xTGdh8pMJv1SpZna0zxG1DwsKZsreLbXBxw==}
+
   universalify@0.1.2:
     resolution: {integrity: sha512-rBJeI5CXAlmy1pV+617WB9J63U6XcazHHF2f2dbJix4XzpUF0RS3Zbj0FGIOCAva5P/d/GBOYaACQ1w+0azUkg==}
     engines: {node: '>= 4.0.0'}
@@ -1941,6 +1950,10 @@ snapshots:
   '@types/estree@1.0.8': {}
 
   '@types/node@12.20.55': {}
+
+  '@types/node@24.1.0':
+    dependencies:
+      undici-types: 7.8.0
 
   '@vitest/expect@1.6.1':
     dependencies:
@@ -2748,15 +2761,17 @@ snapshots:
 
   ufo@1.6.1: {}
 
+  undici-types@7.8.0: {}
+
   universalify@0.1.2: {}
 
-  vite-node@1.6.1:
+  vite-node@1.6.1(@types/node@24.1.0):
     dependencies:
       cac: 6.7.14
       debug: 4.4.1
       pathe: 1.1.2
       picocolors: 1.1.1
-      vite: 5.4.19
+      vite: 5.4.19(@types/node@24.1.0)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -2768,15 +2783,16 @@ snapshots:
       - supports-color
       - terser
 
-  vite@5.4.19:
+  vite@5.4.19(@types/node@24.1.0):
     dependencies:
       esbuild: 0.21.5
       postcss: 8.5.6
       rollup: 4.46.2
     optionalDependencies:
+      '@types/node': 24.1.0
       fsevents: 2.3.3
 
-  vitest@1.6.1(jsdom@26.1.0):
+  vitest@1.6.1(@types/node@24.1.0)(jsdom@26.1.0):
     dependencies:
       '@vitest/expect': 1.6.1
       '@vitest/runner': 1.6.1
@@ -2795,10 +2811,11 @@ snapshots:
       strip-literal: 2.1.1
       tinybench: 2.9.0
       tinypool: 0.8.4
-      vite: 5.4.19
-      vite-node: 1.6.1
+      vite: 5.4.19(@types/node@24.1.0)
+      vite-node: 1.6.1(@types/node@24.1.0)
       why-is-node-running: 2.3.0
     optionalDependencies:
+      '@types/node': 24.1.0
       jsdom: 26.1.0
     transitivePeerDependencies:
       - less
