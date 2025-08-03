@@ -1,4 +1,4 @@
-import { defineConfig } from 'tsup'
+import { defineConfig } from 'tsdown'
 
 export default defineConfig({
   entry: {
@@ -19,8 +19,9 @@ export default defineConfig({
     'try-async': 'src/try-async/index.ts'
   },
   format: ['cjs', 'esm'],
-  outExtension: ({ format }) => ({
+  outExtensions: ({ format }) => ({
     js: `.${format}.js`,
+    dts: `.d.ts`,
   }),
   dts: true,
   tsconfig: 'tsconfig.build.json',
